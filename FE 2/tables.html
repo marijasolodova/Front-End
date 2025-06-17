@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Lentelės</title>
+    <!-- CSS - Cascading Stylesheets -->
+    <!-- CSS stilių integracija 3 būdais -->
+        <!-- inline - stilius priskiriamas prie elemento -->
+        <!-- internal - stilius priskiriamas html dokumente -->
+        <!-- external - stilius priskiriamas atskirame css faile -->
+</head>
+<body style="display: flex; flex-direction: column;">
+    <!-- teksto lygiavimas žymimas savybe text-align -->
+    <div>
+    <table style="border: 1px solid black; border-spacing: 0; text-align: left; background-color: bisque; width: 800px;">
+        <thead>
+            <tr>
+                <th style="color: blueviolet; border-right: 1px solid black; height: 50px; vertical-align: top;">Prekes pavadinimas</th>
+                <th style="color: blueviolet; border-right: 1px solid black; vertical-align: top">Prekes aprasymas</th>
+                <th style="color: blueviolet; border-right: 1px solid black; vertical-align: top">Prekes sandelys</th>
+                <th style="color: blueviolet; vertical-align: top"> Prekes kiekis</th>
+            </tr>
+        </thead>
+        <tbody style="color: rgb(23, 159, 146); background-color: beige;">
+        <!-- table row -->
+        <tr>
+            <!-- table data -->
+            <td rowspan="2" style="border-right: 1px solid black; border-top: 1px solid black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, animi. </td>
+            <td style="border-right: 1px solid black; border-top: 1px solid black">Lorem ipsum dolor sit amet. </td>
+            <td style="border-right: 1px solid black; border-top: 1px solid black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit in asperiores nesciunt placeat corrupti dolorem! </td>
+            <td style="border-top: 1px solid black">Lorem, ipsum dolor. </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid black; border-top: 1px solid black">Something 2</td>
+            <td colspan="2" style="border-right: 1px solid black; border-top: 1px solid black">Something 3</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div>
+    <table style="border: 1px solid black; border-spacing: 0; text-align: left; background-color: bisque; width: 800px;">
+        <thead>
+            <tr>
+                <th style="color: blueviolet; border-right: 1px solid black; height: 50px; vertical-align: top;">Prekes pavadinimas</th>
+                <th style="color: blueviolet; border-right: 1px solid black; vertical-align: top">Prekes aprasymas</th>
+                <th style="color: blueviolet; border-right: 1px solid black; vertical-align: top">Prekes sandelys</th>
+                <th style="color: blueviolet; vertical-align: top"> Prekes kiekis</th>
+            </tr>
+
+        </thead>
+        <tbody style="color: rgb(23, 159, 146); background-color: beige;">
+        <!-- table row -->
+        <tr>
+            <!-- table data -->
+            <td rowspan="2" style="border-right: 1px solid black; border-top: 1px solid black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, animi. </td>
+            <td style="border-right: 1px solid black; border-top: 1px solid black">Lorem ipsum dolor sit amet. </td>
+            <td style="border-right: 1px solid black; border-top: 1px solid black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit in asperiores nesciunt placeat corrupti dolorem! </td>
+            <td style="border-top: 1px solid black">Lorem, ipsum dolor. </td>
+        </tr>
+        <tr>
+            <td style="border-right: 1px solid black; border-top: 1px solid black">Something 2</td>
+            <td colspan="2" style="border-right: 1px solid black; border-top: 1px solid black">Something 3</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</body>
+</html>
