@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- CSS Internal stiliaus integravimas -->
+     <style>
+        .lentele {
+            border: 1px solid gray;
+            border-spacing: 0;
+            border-bottom: none;
+            border-right: none;
+            width: 100%;
+        }
+
+        .lentele th {
+            background-color: blue;
+            color: yellow;
+            text-transform: uppercase;
+            font-size: 12px;
+            height: 25px;
+        }
+
+        .lentele td {
+            height: 30px;
+            border-bottom: 1px solid blue;
+            border-right: 1px solid blue;
+        }
+
+        .lentele tr:nth-child(2n) {
+            background-color: rgb(227, 227, 227);
+        }
+
+        /* taskas zymi klases atributo selektroriu, o po jo rasome klases pavadinima */
+        .borderless {
+            border: none;
+        }
+
+        /* css didziosios ir mazosios raides sukuria skirtuma */
+        .biggerFontSize {
+            font-size: 18px;
+        }
+
+     </style>
+</head>
+<body>
+    <table class="lentele">
+        <thead>
+            <tr>
+                <th>Produktas</th>
+                <th>Kiekis</th>
+                <th>Kaina</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="lentele">
+        <thead>
+            <tr>
+                <th>Vardas ir pavardė</th>
+                <th>Trukmė</th>
+                <th>UŽT padalinys</th>
+                <th>Įstojimo data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vardenis Pavardenis</td>
+                <td>18 sav.</td>
+                <td>Vilnius</td>
+                <td>2024-01-01</td>
+            </tr>
+            <tr>
+                <td>Vardenis Pavardenis</td>
+                <td>18 sav.</td>
+                <td>Vilnius</td>
+                <td>2024-01-01</td>
+            </tr>
+            <tr>
+                <td>Vardenis Pavardenis</td>
+                <td>18 sav.</td>
+                <td>Vilnius</td>
+                <td>2024-01-01</td>
+            </tr>
+            <tr>
+                <td>Vardenis Pavardenis</td>
+                <td>18 sav.</td>
+                <td>Vilnius</td>
+                <td>2024-01-01</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="biggerFontSize">
+        <thead>
+            <tr>
+                <th>Produktas</th>
+                <th>Kiekis</th>
+                <th>Kaina</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-04-14</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
