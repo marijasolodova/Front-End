@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- CSS internal stiliaus integravimas -->
+    <!-- Inline kaczka hierarchijoje yra auksciau uz internal ar external stiliu -->
+     <style>
+        .lentele {
+            border: 1px solid rgb(199, 199, 199);
+            border-spacing: 0;
+            border-right: none;
+            border-spacing: 0;
+            width: 100%;
+        }
+
+        .lentele th {
+            background-color: rgb(53, 53, 176);
+            color: white;
+            text-transform: uppercase;
+            /* text-transform - nurodo teskto konvertavima
+            lowercase - tekstas is mazuju raidziu
+            capitalize - tekstas prasidetu didziaja raide */
+            font-size: 12px;
+            height: 20px;
+        }
+
+        .lentele td {
+            height: 30px;
+            border-bottom: 1px solid rgb(199, 199, 199);
+            border-right: 1px solid rgb(199, 199, 199);
+
+        }
+        /* nth-child() selektorius nurodo kuri dukterini elementa norime pasirinkti
+        n raide nurodo, kad elementas bus kas kelintas, taip pat galima rinktis lyginis/nelyginis (even/odd) */
+        .lentele tr:nth-child(2n) {
+            background-color: rgb(236, 229, 229);
+        }
+
+        /* pirmo/paskutinio elemento pasirinkimas (first/last child) */
+       
+
+        /* taskas zymi klases atributo selektoriu, o po jo rasome klases pavadinima */
+        .borderless {
+            border: none;
+        }
+
+        /* css didziosios ir mazosios raides daro skirtuma */
+        .biggerFontSize {
+            font-size: 18px;
+        }
+     </style>
+</head>
+<body>
+    <table class="lentele">
+        <thead>
+            <tr>
+                <th>Produktas</th>
+                <th>Kiekis</th>
+                <th>Kaina</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-08-05</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Produktas</th>
+                <th>Kiekis</th>
+                <th>Kaina</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monitorius</td>
+                <td>1</td>
+                <td>100.99 EUR</td>
+                <td>2025-08-05</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="lentele">
+        <thead>
+            <tr>
+                <th>Vardas</th>
+                <th>Trukme</th>
+                <th>UZT padalinys</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vardenis Pavardenis</td>
+                <td>18 sav</td>
+                <td>Vilnius</td>
+                <td>2025-08-05</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
