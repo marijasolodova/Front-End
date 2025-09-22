@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Page</title>
+    <style>
+
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            padding: 10px 60px;
+            background-color: rgb(243, 240, 191);
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .headercontainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header ul {
+            display: flex;
+        }
+
+        header ul li {
+            padding-bottom: 10px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        header ul li a:hover {
+            background-color: rgb(72, 111, 75);
+            color: rgb(231, 241, 35);
+            padding: 10px;
+        }
+
+
+        .hero {
+            padding: 150px 50px ;
+            background-image: url(https://cdn.pixabay.com/photo/2022/08/02/07/30/pizza-7359753_1280.jpg);
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            color: rgb(231, 241, 35);
+        }
+
+        main {
+            background-color: black;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .menu li {
+            border: 1px solid;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            background-color: rgb(72, 111, 75);
+            color: rgb(231, 241, 35);
+        }
+
+        .menu h1 {
+            text-align: center;
+            color: rgb(231, 241, 35);
+            padding: 10px 60px
+        }
+
+        .menu ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .openinghours {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 60px;
+        }
+
+        .openinghours td {
+            border-bottom: 1px solid;
+            padding: 5px;
+        }
+
+        .openinghours tr:last-child td {
+            border-bottom: none;
+        }
+
+        .openinghours td:nth-child(2n+1) {
+            border-right: 1px solid;
+        }
+
+        footer {
+            background-color: beige;
+            padding: 10px 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer a:hover {
+            background-color: rgb(72, 111, 75);
+            color: rgb(231, 241, 35);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+            <div class="logo">
+                <h1>Pizza Marinara</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Pizza Marinara</h1>
+        </section>
+        <section class="menu">
+            <h1>Our Menu</h1>
+            <ul>
+                <li>Pasta</li>
+                <li>Pizza</li>
+                <li>Salad</li>
+                <li>Coffee</li>
+                <li>Beer</li>
+            </ul>
+        </section>
+        <section class="openinghours">
+            <table style="border: 1px solid; border-spacing: 0; width: 20%;">
+                <thead>
+                    <caption style="font-weight: bold;">
+                        Opening Hours
+                    </caption>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold;">
+                        <td>Day</td>
+                        <td>Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>11:00 - 21:00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>11:00 - 21:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>closed</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>11:00 - 21:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 - 23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 - 23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>9:00 - 23:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <div>
+                © 2014 UAB Marinara. Visos teisės saugomos. | Elektroniniai sprendimai
+            </div>
+            <div>
+                <a href="https://www.facebook.com/w3schoolscom/">Facebook</a>
+                <a href="https://www.instagram.com/w3schools.com_official/">Instagram</a>
+                <a href="https://www.linkedin.com/company/w3schools.com/">Twitter</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
